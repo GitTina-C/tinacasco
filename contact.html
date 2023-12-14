@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>Project 4 - Web Design and Development</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#">MENU</a>
+            <nav>
+              <ul>
+                  <li><a title="Home" href="index.html">Home</a></li>
+                  <li><a title="Portfolio" href="portfolio.html">Portfolio</a></li>
+                  <li><a class="active" title="Contact" href="contact.html">Contact</a></li>
+              </ul>
+          </nav>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h1>Tina Casco</h1>
+            <h2>Business Information Technology Student
+                <br>
+                Red River College Polytechnic
+            </h2>
+        </div>
+
+        <div class="content">
+            <h2 class="content-subhead contact">Contact Me</h2>
+            <form id="contactForm" action="">
+            <div class="form">
+              <div class="input-row">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Type your Name here"/>
+                <p class="nameError error" id="name_error"></p>
+              </div>
+              <div class="input-row">
+                <label for="phone">Phone Number: </label>
+                <input type="tel" id="phone" name="phone" maxlength="10" placeholder="Type your Phone number here"/>
+                <p class="phoneError error" id="phone_error"></p>
+              </div>
+              <div class="input-row">
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" placeholder="Type your Email Address here"/>
+                <p class="emailError error" id="email_error"></p>
+                <p class="emailError error" id="emailformat_error"></p>
+              </div>
+              <div class="input-row">
+                <label for="message">Message: </label>
+                <textarea type="text" rows="4" id="message" name="message" placeholder="Type your Message or comments here"></textarea>
+                <p class="messageError error" id="message_error"></p>
+              </div>
+            </div>
+            <div class="buttons">
+                <button type="submit" id="submit">Submit</button>
+                <button type="reset" id="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+    </div>
+    <footer id="footer">
+      <div class="footer-menu">
+          <ul class="footer-links">
+              <li>
+                  <a href="index.html" title="Home">Home</a>
+              </li>
+              <li>
+                  <a href="portfolio.html" title="Portfolio">Portfolio</a>
+              </li>
+              <li>
+                  <a href="contact.html" title="Contact">Contact</a>
+              </li>
+          </ul>
+      </div>
+          <p>&copy Tina Casco 2023</p>
+  </footer>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
